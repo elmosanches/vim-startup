@@ -593,3 +593,6 @@ set tags=tags;/
 
 
 NeoBundleCheck
+
+let g:pymode_folding = 0
+let g:pymode_lint_write = 0
