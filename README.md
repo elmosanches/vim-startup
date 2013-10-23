@@ -102,6 +102,7 @@ vimrc:
 buffers:
 
  * ,c        - close current buffer
+ * ,bc       - close current buffer without closing the window
  * ,wc       - write & close current buffer
  * ,d        - go previous buffer && close current
  * ,D        - close all buffers

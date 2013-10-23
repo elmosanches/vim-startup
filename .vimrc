@@ -188,7 +188,7 @@ NeoBundle 'derekwyatt/vim-scala'
 " NeoBundle 'cespare/vjde' " Mirror of http://www.vim.org/scripts/script.php?script_id=1213
 NeoBundle 'plasticboy/vim-markdown' " Markdown Vim Mode
 
-
+NeoBundle 'rbgrouleff/bclose.vim' "deleting a buffer in Vim without closing the window
 
 nnoremap <silent> <F8> :Unite neobundle/update -log -wrap -auto-quit<CR>
 
@@ -569,6 +569,11 @@ vmap <A-k> [egv=gv
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
 xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" ---------------
+" deleting a buffer in Vim without closing the window
+" --------------- {{
+nmap <Leader>bc :Bclose<CR>
 
 " SuperTab like snippets behavior.
 imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
