@@ -190,6 +190,17 @@ NeoBundle 'plasticboy/vim-markdown' " Markdown Vim Mode
 
 NeoBundle 'rbgrouleff/bclose.vim' "deleting a buffer in Vim without closing the window
 
+NeoBundle 'vim-scripts/tinymode.vim'
+nmap          <C-W>+     <C-W>+<SID>ws
+nmap          <C-W>-     <C-W>-<SID>ws
+nn <script>   <SID>ws+   <C-W>+<SID>ws
+nn <script>   <SID>ws-   <C-W>-<SID>ws
+nmap          <C-W>>     <C-W>><SID>ws
+nmap          <C-W><     <C-W><<SID>ws
+nn <script>   <SID>ws>   <C-W>><SID>ws
+nn <script>   <SID>ws<   <C-W><<SID>ws
+nmap          <SID>ws    <Nop>
+
 nnoremap <silent> <F8> :Unite neobundle/update -log -wrap -auto-quit<CR>
 
 
@@ -588,7 +599,7 @@ if has('conceal')
 endif
 
 " nerttreee
-" nmap <C-P> :NERDTreeToggle<CR>
+nmap <C-P> :NERDTreeToggle<CR>
 " nmap <Leader>sit :NERDTreeFind<CR>
 " }} Mapping
 

@@ -34,13 +34,13 @@ To full work you need installed:
 
     # get .vimrc
 
-    wget https://raw.github.com/onjin/vim-startup/master/.vimrc -O ~/.vimrc
+    wget https://raw.github.com/elmosanches/vim-startup/master/.vimrc -O ~/.vimrc
 
     # vim fonts
 
     mkdir -p ~/.fonts
-    wget https://github.com/onjin/vim-startup/raw/master/fonts/Anonymous%20Pro.ttf -O ~/.fonts/Anonymous\ Pro.ttf
-    wget https://github.com/onjin/vim-startup/raw/master/fonts/Inconsolata.otf -O ~/.fonts/Inconsolata.otf
+    wget https://github.com/elmosanches/vim-startup/raw/master/fonts/Anonymous%20Pro.ttf -O ~/.fonts/Anonymous\ Pro.ttf
+    wget https://github.com/elmosanches/vim-startup/raw/master/fonts/Inconsolata.otf -O ~/.fonts/Inconsolata.otf
 
     # run vim
 
