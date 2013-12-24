@@ -75,6 +75,7 @@ nnoremap <F7> :GundoToggle<CR>
 NeoBundle 'scrooloose/nerdtree'
 " {{
 let NERDTreeMinimalUI = 1
+let NERDTreeChDirMode=2
 " }}
 
 NeoBundle 'Shougo/vimshell'
@@ -128,13 +129,11 @@ NeoBundle 'Conque-Shell'
 
 NeoBundle 'davidhalter/jedi-vim'
 let g:jedi#auto_initialization = 1
-let g:jedi#goto_command = "<leader>g"
-let g:jedi#get_definition_command = "<leader>d"
 let g:jedi#use_tabs_not_buffers = 0
 let g:jedi#popup_on_dot = 0
-let g:jedi#rename_command = "<leader>r"
-let g:jedi#related_names_command = "<leader>n"
-let g:jedi#show_function_definition = "0"
+let g:jedi#rename_command = "<leader>f"
+let g:jedi#show_call_signatures = "1"
+let g:jedi#popup_selected_first = "1"
 
 NeoBundle 'nathanaelkane/vim-indent-guides'
 
